@@ -21,10 +21,24 @@ class ViewController: UIViewController {
             for: .touchUpInside
         )
 
+        if #available(iOS 15.0, *) {
+            var config = UIButton.Configuration.plain()
+            config.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
+            button.configuration = config
+        } else {
+            button.contentEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+            button.sizeToFit()
+        }
+
+
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
 
+    private lazy var SRPCallButton: UIButton = {
+        let button = UIButton()
+        return button
+    }()
 
     
 
@@ -48,7 +62,7 @@ private extension ViewController {
             equalTo: view.safeAreaLayoutGuide.topAnchor,
             constant: 16.0
         ).isActive = true
-        
+
         OCPCallButton.leadingAnchor.constraint(
             equalTo: view.leadingAnchor,
             constant: 16.0
