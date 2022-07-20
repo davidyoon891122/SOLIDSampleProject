@@ -16,6 +16,7 @@
 		ADB870BF2887B56700E5189E /* OpenClosedPrinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB870BE2887B56700E5189E /* OpenClosedPrinciple.swift */; };
 		ADB870C62887BA3000E5189E /* SingleResponsibilityPrinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB870C52887BA3000E5189E /* SingleResponsibilityPrinciple.swift */; };
 		ADE0194B2888C25B008F55B4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE0194A2888C25B008F55B4 /* CustomButton.swift */; };
+		ADE019502888C739008F55B4 /* LiskovSubstitutionPrinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE0194F2888C739008F55B4 /* LiskovSubstitutionPrinciple.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		ADB870BE2887B56700E5189E /* OpenClosedPrinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenClosedPrinciple.swift; sourceTree = "<group>"; };
 		ADB870C52887BA3000E5189E /* SingleResponsibilityPrinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleResponsibilityPrinciple.swift; sourceTree = "<group>"; };
 		ADE0194A2888C25B008F55B4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		ADE0194F2888C739008F55B4 /* LiskovSubstitutionPrinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskovSubstitutionPrinciple.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				ADB870BE2887B56700E5189E /* OpenClosedPrinciple.swift */,
 				ADB870C52887BA3000E5189E /* SingleResponsibilityPrinciple.swift */,
+				ADE0194F2888C739008F55B4 /* LiskovSubstitutionPrinciple.swift */,
 			);
 			path = SOLID;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE019502888C739008F55B4 /* LiskovSubstitutionPrinciple.swift in Sources */,
 				ADB870932887B4B700E5189E /* ViewController.swift in Sources */,
 				ADB870BF2887B56700E5189E /* OpenClosedPrinciple.swift in Sources */,
 				ADE0194B2888C25B008F55B4 /* CustomButton.swift in Sources */,

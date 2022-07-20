@@ -63,6 +63,34 @@ class ViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
+
+    private lazy var LSPBadCaseButton: CustomButton = {
+        let button = CustomButton()
+        button.setTitle("LSPBadCase", for: .normal)
+
+        button.addTarget(
+            self,
+            action: #selector(badCaseActionForLSP),
+            for: .touchUpInside
+        )
+
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+
+    private lazy var LSPNiceCaseButton: CustomButton = {
+        let button = CustomButton()
+        button.setTitle("LSPNiceCase", for: .normal)
+
+        button.addTarget(
+            self,
+            action: #selector(niceCaseActionForLSP),
+            for: .touchUpInside
+        )
+
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
     
     private let loginServiceBadCase = LoginServerBadCase()
 
@@ -70,6 +98,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         setupViews()
+        niceCaseActionForLSP()
     }
 }
 
@@ -80,6 +109,8 @@ private extension ViewController {
             SRPSaveButton,
             SRPLoadButton,
             SRPNiceCaseButton,
+            LSPBadCaseButton,
+            LSPNiceCaseButton
         ]
             .forEach {
                 view.addSubview($0)
@@ -117,6 +148,21 @@ private extension ViewController {
             constant: 4.0
         ).isActive = true
 
+        LSPBadCaseButton.topAnchor.constraint(
+            equalTo: SRPSaveButton.bottomAnchor,
+            constant: 4.0
+        ).isActive = true
+        LSPBadCaseButton.leadingAnchor.constraint(
+            equalTo: view.leadingAnchor,
+            constant: 16.0
+        ).isActive = true
+
+        LSPNiceCaseButton.topAnchor.constraint(equalTo: LSPBadCaseButton.topAnchor).isActive = true
+        LSPNiceCaseButton.leadingAnchor.constraint(
+            equalTo: LSPBadCaseButton.trailingAnchor,
+            constant: 4.0
+        ).isActive =  true
+
     }
 
     @objc func callButtonAction() {
@@ -146,5 +192,26 @@ private extension ViewController {
         )
 
         loginServiceNiceCase.login()
+    }
+
+    @objc func badCaseActionForLSP() {
+        let rectangle = Rectangle()
+        printArea(of: rectangle)
+
+        let square = Square()
+        printArea(of: square)
+    }
+
+    @objc func niceCaseActionForLSP() {
+        let niceRectangle = RectagleNice(
+            width: 3,
+            height: 6
+        )
+
+        printAreaWithProtocol(of: niceRectangle)
+        let niceSquare = SquareNice(length: 6)
+
+        printAreaWithProtocol(of: niceSquare)
+
     }
 }
