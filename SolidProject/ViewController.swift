@@ -13,6 +13,8 @@ class ViewController: UIViewController {
         button.setTitle("OCPButton", for: .normal)
         button.setTitleColor(.label, for: .normal)
 
+        button.layer.cornerRadius = 13.0
+
         button.backgroundColor = .secondarySystemBackground
 
         button.addTarget(
