@@ -23,8 +23,8 @@ class LoginServerBadCase {
     }
 
     func loadUserInfo() {
-        let stringData = getStringDataFromDatabase()
-        print(stringData)
+        let savedData = getStringDataFromDatabase()
+        decodeUserInfoFromData(data: savedData)
     }
 
 }
@@ -36,7 +36,7 @@ private extension LoginServerBadCase {
 
     func decodeUserInfom(data: Data) -> User {
         return User(
-            name: "",
+            name: "David",
             age: 10
         )
     }
@@ -52,8 +52,15 @@ private extension LoginServerBadCase {
         return encodedData
     }
 
-    func getStringDataFromDatabase() -> String {
-        guard let data = UserDefaults.standard.string(forKey: userDefaultsKey) else { return ""}
+    func getStringDataFromDatabase() -> Data {
+        guard let data = UserDefaults.standard.object(forKey: userDefaultsKey) as? Data else { return Data() }
         return data
+    }
+
+    func decodeUserInfoFromData(data: Data) {
+        let decoder = JSONDecoder()
+        guard let userInfo = try? decoder.decode(User.self, from: data) else { return }
+        print(userInfo)
+
     }
 }
