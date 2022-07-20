@@ -128,6 +128,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         setupViews()
+        testFunction()
     }
 }
 
@@ -183,5 +184,19 @@ private extension ViewController {
 
     @objc func loadButtonAction() {
         loginServiceBadCase.loadUserInfo()
+    }
+
+    func testFunction() {
+        let reqeustHandler = RequestHandler()
+        let decodingHandler = DecodingHandler()
+        let databaseHandler = DatabaseHandler()
+
+        let loginServiceNiceCase = LoginServerNiceCase(
+            apiHandler: reqeustHandler,
+            decodingHandler: decodingHandler,
+            dbHandler: databaseHandler
+        )
+
+        loginServiceNiceCase.login()
     }
 }
