@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     private lazy var OCPCallButton: CustomButton = {
         let button = CustomButton()
-        button.setTitle("OCPButton", for: .normal)
+        button.setTitle("OCP", for: .normal)
 
         button.addTarget(
             self,
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
 
     private lazy var SRPSaveButton: CustomButton = {
         let button = CustomButton()
-        button.setTitle("SRPSaveButton", for: .normal)
+        button.setTitle("SRPSave", for: .normal)
 
         button.addTarget(
             self,
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
 
     private lazy var SRPLoadButton: CustomButton = {
         let button = CustomButton()
-        button.setTitle("SRPLoadButton", for: .normal)
+        button.setTitle("SRPLoad", for: .normal)
 
         button.addTarget(
             self,
@@ -49,6 +49,20 @@ class ViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
+
+    private lazy var SRPNiceCaseButton: CustomButton = {
+        let button = CustomButton()
+        button.setTitle("SRPNiceCase", for: .normal)
+
+        button.addTarget(
+            self,
+            action: #selector(niceCaseAction),
+            for: .touchUpInside
+        )
+        
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
     
     private let loginServiceBadCase = LoginServerBadCase()
 
@@ -56,7 +70,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         setupViews()
-        testFunction()
     }
 }
 
@@ -66,6 +79,7 @@ private extension ViewController {
             OCPCallButton,
             SRPSaveButton,
             SRPLoadButton,
+            SRPNiceCaseButton,
         ]
             .forEach {
                 view.addSubview($0)
@@ -97,6 +111,12 @@ private extension ViewController {
             constant: 4.0
         ).isActive = true
 
+        SRPNiceCaseButton.topAnchor.constraint(equalTo: SRPSaveButton.topAnchor).isActive = true
+        SRPNiceCaseButton.leadingAnchor.constraint(
+            equalTo: SRPLoadButton.trailingAnchor,
+            constant: 4.0
+        ).isActive = true
+
     }
 
     @objc func callButtonAction() {
@@ -114,7 +134,7 @@ private extension ViewController {
         loginServiceBadCase.loadUserInfo()
     }
 
-    func testFunction() {
+    @objc func niceCaseAction() {
         let reqeustHandler = RequestHandler()
         let decodingHandler = DecodingHandler()
         let databaseHandler = DatabaseHandler()
