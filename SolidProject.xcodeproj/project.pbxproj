@@ -15,6 +15,7 @@
 		ADB870A62887B4BA00E5189E /* SolidProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB870A52887B4BA00E5189E /* SolidProjectTests.swift */; };
 		ADB870BF2887B56700E5189E /* OpenClosedPrinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB870BE2887B56700E5189E /* OpenClosedPrinciple.swift */; };
 		ADB870C62887BA3000E5189E /* SingleResponsibilityPrinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB870C52887BA3000E5189E /* SingleResponsibilityPrinciple.swift */; };
+		ADE0194B2888C25B008F55B4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE0194A2888C25B008F55B4 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		ADB870A52887B4BA00E5189E /* SolidProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidProjectTests.swift; sourceTree = "<group>"; };
 		ADB870BE2887B56700E5189E /* OpenClosedPrinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenClosedPrinciple.swift; sourceTree = "<group>"; };
 		ADB870C52887BA3000E5189E /* SingleResponsibilityPrinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleResponsibilityPrinciple.swift; sourceTree = "<group>"; };
+		ADE0194A2888C25B008F55B4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +82,8 @@
 		ADB8708D2887B4B700E5189E /* SolidProject */ = {
 			isa = PBXGroup;
 			children = (
-				ADB8708E2887B4B700E5189E /* AppDelegate.swift */,
-				ADB870902887B4B700E5189E /* SceneDelegate.swift */,
-				ADB870922887B4B700E5189E /* ViewController.swift */,
+				ADE0194D2888C42B008F55B4 /* Delegate */,
+				ADE0194E2888C434008F55B4 /* Scene */,
 				ADB870C42887B95600E5189E /* SOLID */,
 				ADB870972887B4BA00E5189E /* Assets.xcassets */,
 				ADB870992887B4BA00E5189E /* LaunchScreen.storyboard */,
@@ -106,6 +107,32 @@
 				ADB870C52887BA3000E5189E /* SingleResponsibilityPrinciple.swift */,
 			);
 			path = SOLID;
+			sourceTree = "<group>";
+		};
+		ADE0194C2888C3FB008F55B4 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				ADE0194A2888C25B008F55B4 /* CustomButton.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		ADE0194D2888C42B008F55B4 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				ADB8708E2887B4B700E5189E /* AppDelegate.swift */,
+				ADB870902887B4B700E5189E /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		ADE0194E2888C434008F55B4 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				ADE0194C2888C3FB008F55B4 /* CustomView */,
+				ADB870922887B4B700E5189E /* ViewController.swift */,
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +237,7 @@
 			files = (
 				ADB870932887B4B700E5189E /* ViewController.swift in Sources */,
 				ADB870BF2887B56700E5189E /* OpenClosedPrinciple.swift in Sources */,
+				ADE0194B2888C25B008F55B4 /* CustomButton.swift in Sources */,
 				ADB8708F2887B4B700E5189E /* AppDelegate.swift in Sources */,
 				ADB870912887B4B700E5189E /* SceneDelegate.swift in Sources */,
 				ADB870C62887BA3000E5189E /* SingleResponsibilityPrinciple.swift in Sources */,

@@ -8,14 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-    private lazy var OCPCallButton: UIButton = {
-        let button = UIButton()
+    private lazy var OCPCallButton: CustomButton = {
+        let button = CustomButton()
         button.setTitle("OCPButton", for: .normal)
-        button.setTitleColor(.label, for: .normal)
-
-        button.layer.cornerRadius = 13.0
-
-        button.backgroundColor = .secondarySystemBackground
 
         button.addTarget(
             self,
@@ -23,37 +18,13 @@ class ViewController: UIViewController {
             for: .touchUpInside
         )
 
-        if #available(iOS 15.0, *) {
-            var config = UIButton.Configuration.plain()
-            config.contentInsets = NSDirectionalEdgeInsets(
-                top: 10,
-                leading: 10,
-                bottom: 10,
-                trailing: 10
-            )
-            button.configuration = config
-        } else {
-            button.contentEdgeInsets = UIEdgeInsets(
-                top: 10,
-                left: 10,
-                bottom: 10,
-                right: 10
-            )
-            button.sizeToFit()
-        }
-
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
 
-    private lazy var SRPSaveButton: UIButton = {
-        let button = UIButton()
+    private lazy var SRPSaveButton: CustomButton = {
+        let button = CustomButton()
         button.setTitle("SRPSaveButton", for: .normal)
-        button.setTitleColor(.label, for: .normal)
-
-        button.layer.cornerRadius = 13.0
-
-        button.backgroundColor = .secondarySystemBackground
 
         button.addTarget(
             self,
@@ -61,62 +32,19 @@ class ViewController: UIViewController {
             for: .touchUpInside
         )
 
-        if #available(iOS 15.0, *) {
-            var config = UIButton.Configuration.plain()
-            config.contentInsets = NSDirectionalEdgeInsets(
-                top: 10,
-                leading: 10,
-                bottom: 10,
-                trailing: 10
-            )
-            button.configuration = config
-        } else {
-            button.contentEdgeInsets = UIEdgeInsets(
-                top: 10,
-                left: 10,
-                bottom: 10,
-                right: 10
-            )
-            button.sizeToFit()
-        }
-
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
 
-    private lazy var SRPLoadButton: UIButton = {
-        let button = UIButton()
+    private lazy var SRPLoadButton: CustomButton = {
+        let button = CustomButton()
         button.setTitle("SRPLoadButton", for: .normal)
-        button.setTitleColor(.label, for: .normal)
-
-        button.layer.cornerRadius = 13.0
-
-        button.backgroundColor = .secondarySystemBackground
 
         button.addTarget(
             self,
             action: #selector(loadButtonAction),
             for: .touchUpInside
         )
-
-        if #available(iOS 15.0, *) {
-            var config = UIButton.Configuration.plain()
-            config.contentInsets = NSDirectionalEdgeInsets(
-                top: 10,
-                leading: 10,
-                bottom: 10,
-                trailing: 10
-            )
-            button.configuration = config
-        } else {
-            button.contentEdgeInsets = UIEdgeInsets(
-                top: 10,
-                left: 10,
-                bottom: 10,
-                right: 10
-            )
-            button.sizeToFit()
-        }
 
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
