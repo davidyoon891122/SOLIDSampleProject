@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    private lazy var callButton: UIButton = {
+    private lazy var OCPCallButton: UIButton = {
         let button = UIButton()
         button.setTitle("OCPButton", for: .normal)
         button.setTitleColor(.label, for: .normal)
@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         return button
     }()
 
+
     
 
     override func viewDidLoad() {
@@ -37,14 +38,23 @@ class ViewController: UIViewController {
 private extension ViewController {
     func setupViews() {
         [
-            callButton
+            OCPCallButton
         ]
             .forEach {
                 view.addSubview($0)
             }
 
-        callButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        callButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        OCPCallButton.topAnchor.constraint(
+            equalTo: view.safeAreaLayoutGuide.topAnchor,
+            constant: 16.0
+        ).isActive = true
+        
+        OCPCallButton.leadingAnchor.constraint(
+            equalTo: view.leadingAnchor,
+            constant: 16.0
+        ).isActive = true
+
+
     }
 
     @objc func callButtonAction() {
