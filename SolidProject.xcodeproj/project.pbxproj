@@ -10,23 +10,15 @@
 		ADB8708F2887B4B700E5189E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB8708E2887B4B700E5189E /* AppDelegate.swift */; };
 		ADB870912887B4B700E5189E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB870902887B4B700E5189E /* SceneDelegate.swift */; };
 		ADB870932887B4B700E5189E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB870922887B4B700E5189E /* ViewController.swift */; };
-		ADB870962887B4B700E5189E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB870942887B4B700E5189E /* Main.storyboard */; };
 		ADB870982887B4BA00E5189E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADB870972887B4BA00E5189E /* Assets.xcassets */; };
 		ADB8709B2887B4BA00E5189E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB870992887B4BA00E5189E /* LaunchScreen.storyboard */; };
 		ADB870A62887B4BA00E5189E /* SolidProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB870A52887B4BA00E5189E /* SolidProjectTests.swift */; };
-		ADB870B02887B4BA00E5189E /* SolidProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB870AF2887B4BA00E5189E /* SolidProjectUITests.swift */; };
-		ADB870B22887B4BA00E5189E /* SolidProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB870B12887B4BA00E5189E /* SolidProjectUITestsLaunchTests.swift */; };
+		ADB870BF2887B56700E5189E /* OpenClosedPrinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB870BE2887B56700E5189E /* OpenClosedPrinciple.swift */; };
+		ADB870C62887BA3000E5189E /* SingleResponsibilityPrinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB870C52887BA3000E5189E /* SingleResponsibilityPrinciple.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		ADB870A22887B4BA00E5189E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ADB870832887B4B700E5189E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ADB8708A2887B4B700E5189E;
-			remoteInfo = SolidProject;
-		};
-		ADB870AC2887B4BA00E5189E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADB870832887B4B700E5189E /* Project object */;
 			proxyType = 1;
@@ -40,15 +32,13 @@
 		ADB8708E2887B4B700E5189E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADB870902887B4B700E5189E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ADB870922887B4B700E5189E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ADB870952887B4B700E5189E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADB870972887B4BA00E5189E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADB8709A2887B4BA00E5189E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADB8709C2887B4BA00E5189E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADB870A12887B4BA00E5189E /* SolidProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolidProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB870A52887B4BA00E5189E /* SolidProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidProjectTests.swift; sourceTree = "<group>"; };
-		ADB870AB2887B4BA00E5189E /* SolidProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SolidProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADB870AF2887B4BA00E5189E /* SolidProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidProjectUITests.swift; sourceTree = "<group>"; };
-		ADB870B12887B4BA00E5189E /* SolidProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolidProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ADB870BE2887B56700E5189E /* OpenClosedPrinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenClosedPrinciple.swift; sourceTree = "<group>"; };
+		ADB870C52887BA3000E5189E /* SingleResponsibilityPrinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleResponsibilityPrinciple.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +56,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADB870A82887B4BA00E5189E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +64,6 @@
 			children = (
 				ADB8708D2887B4B700E5189E /* SolidProject */,
 				ADB870A42887B4BA00E5189E /* SolidProjectTests */,
-				ADB870AE2887B4BA00E5189E /* SolidProjectUITests */,
 				ADB8708C2887B4B700E5189E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +73,6 @@
 			children = (
 				ADB8708B2887B4B700E5189E /* SolidProject.app */,
 				ADB870A12887B4BA00E5189E /* SolidProjectTests.xctest */,
-				ADB870AB2887B4BA00E5189E /* SolidProjectUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,7 +83,7 @@
 				ADB8708E2887B4B700E5189E /* AppDelegate.swift */,
 				ADB870902887B4B700E5189E /* SceneDelegate.swift */,
 				ADB870922887B4B700E5189E /* ViewController.swift */,
-				ADB870942887B4B700E5189E /* Main.storyboard */,
+				ADB870C42887B95600E5189E /* SOLID */,
 				ADB870972887B4BA00E5189E /* Assets.xcassets */,
 				ADB870992887B4BA00E5189E /* LaunchScreen.storyboard */,
 				ADB8709C2887B4BA00E5189E /* Info.plist */,
@@ -118,13 +99,13 @@
 			path = SolidProjectTests;
 			sourceTree = "<group>";
 		};
-		ADB870AE2887B4BA00E5189E /* SolidProjectUITests */ = {
+		ADB870C42887B95600E5189E /* SOLID */ = {
 			isa = PBXGroup;
 			children = (
-				ADB870AF2887B4BA00E5189E /* SolidProjectUITests.swift */,
-				ADB870B12887B4BA00E5189E /* SolidProjectUITestsLaunchTests.swift */,
+				ADB870BE2887B56700E5189E /* OpenClosedPrinciple.swift */,
+				ADB870C52887BA3000E5189E /* SingleResponsibilityPrinciple.swift */,
 			);
-			path = SolidProjectUITests;
+			path = SOLID;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +146,6 @@
 			productReference = ADB870A12887B4BA00E5189E /* SolidProjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		ADB870AA2887B4BA00E5189E /* SolidProjectUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ADB870BB2887B4BA00E5189E /* Build configuration list for PBXNativeTarget "SolidProjectUITests" */;
-			buildPhases = (
-				ADB870A72887B4BA00E5189E /* Sources */,
-				ADB870A82887B4BA00E5189E /* Frameworks */,
-				ADB870A92887B4BA00E5189E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ADB870AD2887B4BA00E5189E /* PBXTargetDependency */,
-			);
-			name = SolidProjectUITests;
-			productName = SolidProjectUITests;
-			productReference = ADB870AB2887B4BA00E5189E /* SolidProjectUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +160,6 @@
 						CreatedOnToolsVersion = 13.2.1;
 					};
 					ADB870A02887B4BA00E5189E = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = ADB8708A2887B4B700E5189E;
-					};
-					ADB870AA2887B4BA00E5189E = {
 						CreatedOnToolsVersion = 13.2.1;
 						TestTargetID = ADB8708A2887B4B700E5189E;
 					};
@@ -221,7 +180,6 @@
 			targets = (
 				ADB8708A2887B4B700E5189E /* SolidProject */,
 				ADB870A02887B4BA00E5189E /* SolidProjectTests */,
-				ADB870AA2887B4BA00E5189E /* SolidProjectUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,18 +191,10 @@
 			files = (
 				ADB8709B2887B4BA00E5189E /* LaunchScreen.storyboard in Resources */,
 				ADB870982887B4BA00E5189E /* Assets.xcassets in Resources */,
-				ADB870962887B4B700E5189E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		ADB8709F2887B4BA00E5189E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ADB870A92887B4BA00E5189E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,8 +209,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADB870932887B4B700E5189E /* ViewController.swift in Sources */,
+				ADB870BF2887B56700E5189E /* OpenClosedPrinciple.swift in Sources */,
 				ADB8708F2887B4B700E5189E /* AppDelegate.swift in Sources */,
 				ADB870912887B4B700E5189E /* SceneDelegate.swift in Sources */,
+				ADB870C62887BA3000E5189E /* SingleResponsibilityPrinciple.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,15 +224,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADB870A72887B4BA00E5189E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ADB870B22887B4BA00E5189E /* SolidProjectUITestsLaunchTests.swift in Sources */,
-				ADB870B02887B4BA00E5189E /* SolidProjectUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,22 +232,9 @@
 			target = ADB8708A2887B4B700E5189E /* SolidProject */;
 			targetProxy = ADB870A22887B4BA00E5189E /* PBXContainerItemProxy */;
 		};
-		ADB870AD2887B4BA00E5189E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ADB8708A2887B4B700E5189E /* SolidProject */;
-			targetProxy = ADB870AC2887B4BA00E5189E /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		ADB870942887B4B700E5189E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ADB870952887B4B700E5189E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ADB870992887B4BA00E5189E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -367,7 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -444,7 +374,7 @@
 				INFOPLIST_FILE = SolidProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,7 +402,7 @@
 				INFOPLIST_FILE = SolidProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -528,42 +458,6 @@
 			};
 			name = Release;
 		};
-		ADB870BC2887B4BA00E5189E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HDFLLXK789;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ycompany.SolidProjectUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SolidProject;
-			};
-			name = Debug;
-		};
-		ADB870BD2887B4BA00E5189E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HDFLLXK789;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ycompany.SolidProjectUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SolidProject;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -590,15 +484,6 @@
 			buildConfigurations = (
 				ADB870B92887B4BA00E5189E /* Debug */,
 				ADB870BA2887B4BA00E5189E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ADB870BB2887B4BA00E5189E /* Build configuration list for PBXNativeTarget "SolidProjectUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ADB870BC2887B4BA00E5189E /* Debug */,
-				ADB870BD2887B4BA00E5189E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
