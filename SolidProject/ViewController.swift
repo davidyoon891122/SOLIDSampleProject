@@ -25,20 +25,62 @@ class ViewController: UIViewController {
 
         if #available(iOS 15.0, *) {
             var config = UIButton.Configuration.plain()
-            config.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
+            config.contentInsets = NSDirectionalEdgeInsets(
+                top: 10,
+                leading: 10,
+                bottom: 10,
+                trailing: 10
+            )
             button.configuration = config
         } else {
-            button.contentEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+            button.contentEdgeInsets = UIEdgeInsets(
+                top: 10,
+                left: 10,
+                bottom: 10,
+                right: 10
+            )
             button.sizeToFit()
         }
-
 
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
 
-    private lazy var SRPCallButton: UIButton = {
+    private lazy var SRPSaveButton: UIButton = {
         let button = UIButton()
+        button.setTitle("SRPSaveButton", for: .normal)
+        button.setTitleColor(.label, for: .normal)
+
+        button.layer.cornerRadius = 13.0
+
+        button.backgroundColor = .secondarySystemBackground
+
+        button.addTarget(
+            self,
+            action: #selector(saveButtonAction),
+            for: .touchUpInside
+        )
+
+        if #available(iOS 15.0, *) {
+            var config = UIButton.Configuration.plain()
+            config.contentInsets = NSDirectionalEdgeInsets(
+                top: 10,
+                leading: 10,
+                bottom: 10,
+                trailing: 10
+            )
+            button.configuration = config
+        } else {
+            button.contentEdgeInsets = UIEdgeInsets(
+                top: 10,
+                left: 10,
+                bottom: 10,
+                right: 10
+            )
+            button.sizeToFit()
+        }
+
+        button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
 
@@ -54,7 +96,8 @@ class ViewController: UIViewController {
 private extension ViewController {
     func setupViews() {
         [
-            OCPCallButton
+            OCPCallButton,
+            SRPSaveButton
         ]
             .forEach {
                 view.addSubview($0)
@@ -71,6 +114,9 @@ private extension ViewController {
         ).isActive = true
 
 
+        SRPSaveButton.topAnchor.constraint(equalTo: OCPCallButton.topAnchor).isActive = true
+        SRPSaveButton.leadingAnchor.constraint(equalTo: OCPCallButton.trailingAnchor).isActive = true
+
     }
 
     @objc func callButtonAction() {
@@ -78,5 +124,10 @@ private extension ViewController {
         let cat = Cat()
         dog.makeSound()
         cat.makeSound()
+    }
+
+    @objc func saveButtonAction() {
+        let loginServiceBadCase = LoginServerBadCase()
+        loginServiceBadCase.login(id: "David", pw: "1234")
     }
 }

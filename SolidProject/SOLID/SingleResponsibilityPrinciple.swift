@@ -43,6 +43,7 @@ private extension LoginServerBadCase {
 
     func saveUserOnDatabase(data: Data) {
         UserDefaults.standard.set(data, forKey: userDefaultsKey)
+        print("UserDataSaved!")
     }
 
     func encodeUserDataToJson(user: User) -> Data {
