@@ -244,7 +244,6 @@ private extension ViewController {
 
     func configureNavigation() {
         navigationItem.title = "SOLID Project"
-        navigationController?.navigationBar.prefersLargeTitles = true
     }
 
     @objc func didTapNextButton() {
