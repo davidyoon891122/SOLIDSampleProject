@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 final class PageViewController: UIViewController {
+    // MARK: - UI
     private lazy var menuCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -25,17 +26,21 @@ final class PageViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(
-            UICollectionViewCell.self,
-            forCellWithReuseIdentifier: "cell"
+            MenuCollectionViewCell.self,
+            forCellWithReuseIdentifier: MenuCollectionViewCell.identifier
         )
 
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         return collectionView
     }()
 
+    // MARK: - Variables
+    private let menus: [String] = ["Main", "Sub"]
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        navigationController?.navigationBar.prefersLargeTitles = false
         setupViews()
     }
 }
@@ -45,15 +50,22 @@ extension PageViewController: UICollectionViewDataSource {
         _ collectionView: UICollectionView,
         numberOfItemsInSection section: Int
     ) -> Int {
-        return 2
+        return menus.count
     }
 
     func collectionView(
         _ collectionView: UICollectionView,
         cellForItemAt indexPath: IndexPath
     ) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        cell.backgroundColor = .red
+        guard let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: MenuCollectionViewCell.identifier,
+            for: indexPath
+        ) as? MenuCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+        let menu = menus[indexPath.row]
+        cell.setupCell(menu: menu)
+
         return cell
     }
 }

@@ -20,6 +20,7 @@
 		ADE019522888CD2D008F55B4 /* InterfaceSegregationPrinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE019512888CD2D008F55B4 /* InterfaceSegregationPrinciple.swift */; };
 		ADE019542888E50A008F55B4 /* DependencyInversionPrinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE019532888E50A008F55B4 /* DependencyInversionPrinciple.swift */; };
 		ADE019562888FFCB008F55B4 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE019552888FFCB008F55B4 /* PageViewController.swift */; };
+		ADE0195928890CCE008F55B4 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE0195828890CCE008F55B4 /* MenuCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		ADE019512888CD2D008F55B4 /* InterfaceSegregationPrinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceSegregationPrinciple.swift; sourceTree = "<group>"; };
 		ADE019532888E50A008F55B4 /* DependencyInversionPrinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInversionPrinciple.swift; sourceTree = "<group>"; };
 		ADE019552888FFCB008F55B4 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		ADE0195828890CCE008F55B4 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,9 +144,18 @@
 			children = (
 				ADE0194C2888C3FB008F55B4 /* CustomView */,
 				ADB870922887B4B700E5189E /* ViewController.swift */,
-				ADE019552888FFCB008F55B4 /* PageViewController.swift */,
+				ADE0195728890CB9008F55B4 /* PageView */,
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		ADE0195728890CB9008F55B4 /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				ADE019552888FFCB008F55B4 /* PageViewController.swift */,
+				ADE0195828890CCE008F55B4 /* MenuCollectionViewCell.swift */,
+			);
+			path = PageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +265,7 @@
 				ADE0194B2888C25B008F55B4 /* CustomButton.swift in Sources */,
 				ADB8708F2887B4B700E5189E /* AppDelegate.swift in Sources */,
 				ADE019522888CD2D008F55B4 /* InterfaceSegregationPrinciple.swift in Sources */,
+				ADE0195928890CCE008F55B4 /* MenuCollectionViewCell.swift in Sources */,
 				ADB870912887B4B700E5189E /* SceneDelegate.swift in Sources */,
 				ADB870C62887BA3000E5189E /* SingleResponsibilityPrinciple.swift in Sources */,
 				ADE019542888E50A008F55B4 /* DependencyInversionPrinciple.swift in Sources */,
