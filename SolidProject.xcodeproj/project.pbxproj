@@ -17,6 +17,7 @@
 		ADB870C62887BA3000E5189E /* SingleResponsibilityPrinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB870C52887BA3000E5189E /* SingleResponsibilityPrinciple.swift */; };
 		ADE0194B2888C25B008F55B4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE0194A2888C25B008F55B4 /* CustomButton.swift */; };
 		ADE019502888C739008F55B4 /* LiskovSubstitutionPrinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE0194F2888C739008F55B4 /* LiskovSubstitutionPrinciple.swift */; };
+		ADE019522888CD2D008F55B4 /* InterfaceSegregationPrinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE019512888CD2D008F55B4 /* InterfaceSegregationPrinciple.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		ADB870C52887BA3000E5189E /* SingleResponsibilityPrinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleResponsibilityPrinciple.swift; sourceTree = "<group>"; };
 		ADE0194A2888C25B008F55B4 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		ADE0194F2888C739008F55B4 /* LiskovSubstitutionPrinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskovSubstitutionPrinciple.swift; sourceTree = "<group>"; };
+		ADE019512888CD2D008F55B4 /* InterfaceSegregationPrinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceSegregationPrinciple.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				ADB870BE2887B56700E5189E /* OpenClosedPrinciple.swift */,
 				ADB870C52887BA3000E5189E /* SingleResponsibilityPrinciple.swift */,
 				ADE0194F2888C739008F55B4 /* LiskovSubstitutionPrinciple.swift */,
+				ADE019512888CD2D008F55B4 /* InterfaceSegregationPrinciple.swift */,
 			);
 			path = SOLID;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				ADB870BF2887B56700E5189E /* OpenClosedPrinciple.swift in Sources */,
 				ADE0194B2888C25B008F55B4 /* CustomButton.swift in Sources */,
 				ADB8708F2887B4B700E5189E /* AppDelegate.swift in Sources */,
+				ADE019522888CD2D008F55B4 /* InterfaceSegregationPrinciple.swift in Sources */,
 				ADB870912887B4B700E5189E /* SceneDelegate.swift in Sources */,
 				ADB870C62887BA3000E5189E /* SingleResponsibilityPrinciple.swift in Sources */,
 			);
