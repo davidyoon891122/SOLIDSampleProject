@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    // MARK: - UI
     private lazy var OCPCallButton: CustomButton = {
         let button = CustomButton()
         button.setTitle("OCP", for: .normal)
@@ -91,6 +92,22 @@ class ViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
+
+    private lazy var nextViewButton: CustomButton = {
+        let button = CustomButton()
+        button.setTitle("NextView", for: .normal)
+
+        button.addTarget(
+            self,
+            action: #selector(didTapNextButton),
+            for: .touchUpInside
+        )
+
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+
+    // MARK: - Variables
     
     private let loginServiceBadCase = LoginServerBadCase()
 
@@ -98,7 +115,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         setupViews()
-        niceCaseActionForLSP()
+        configureNavigation()
     }
 }
 
@@ -110,7 +127,8 @@ private extension ViewController {
             SRPLoadButton,
             SRPNiceCaseButton,
             LSPBadCaseButton,
-            LSPNiceCaseButton
+            LSPNiceCaseButton,
+            nextViewButton
         ]
             .forEach {
                 view.addSubview($0)
@@ -163,6 +181,15 @@ private extension ViewController {
             constant: 4.0
         ).isActive =  true
 
+        nextViewButton.leadingAnchor.constraint(
+            equalTo: view.leadingAnchor,
+            constant: 16.0
+        ).isActive = true
+        nextViewButton.bottomAnchor.constraint(
+            equalTo: view.safeAreaLayoutGuide.bottomAnchor,
+            constant: -16.0
+        ).isActive = true
+
     }
 
     @objc func callButtonAction() {
@@ -213,5 +240,15 @@ private extension ViewController {
 
         printAreaWithProtocol(of: niceSquare)
 
+    }
+
+    func configureNavigation() {
+        navigationItem.title = "SOLID Project"
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+
+    @objc func didTapNextButton() {
+        let nextVC = PageViewController()
+        navigationController?.pushViewController(nextVC, animated: true)
     }
 }

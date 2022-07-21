@@ -19,6 +19,7 @@
 		ADE019502888C739008F55B4 /* LiskovSubstitutionPrinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE0194F2888C739008F55B4 /* LiskovSubstitutionPrinciple.swift */; };
 		ADE019522888CD2D008F55B4 /* InterfaceSegregationPrinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE019512888CD2D008F55B4 /* InterfaceSegregationPrinciple.swift */; };
 		ADE019542888E50A008F55B4 /* DependencyInversionPrinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE019532888E50A008F55B4 /* DependencyInversionPrinciple.swift */; };
+		ADE019562888FFCB008F55B4 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE019552888FFCB008F55B4 /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		ADE0194F2888C739008F55B4 /* LiskovSubstitutionPrinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskovSubstitutionPrinciple.swift; sourceTree = "<group>"; };
 		ADE019512888CD2D008F55B4 /* InterfaceSegregationPrinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceSegregationPrinciple.swift; sourceTree = "<group>"; };
 		ADE019532888E50A008F55B4 /* DependencyInversionPrinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInversionPrinciple.swift; sourceTree = "<group>"; };
+		ADE019552888FFCB008F55B4 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			children = (
 				ADE0194C2888C3FB008F55B4 /* CustomView */,
 				ADB870922887B4B700E5189E /* ViewController.swift */,
+				ADE019552888FFCB008F55B4 /* PageViewController.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADE019502888C739008F55B4 /* LiskovSubstitutionPrinciple.swift in Sources */,
+				ADE019562888FFCB008F55B4 /* PageViewController.swift in Sources */,
 				ADB870932887B4B700E5189E /* ViewController.swift in Sources */,
 				ADB870BF2887B56700E5189E /* OpenClosedPrinciple.swift in Sources */,
 				ADE0194B2888C25B008F55B4 /* CustomButton.swift in Sources */,
