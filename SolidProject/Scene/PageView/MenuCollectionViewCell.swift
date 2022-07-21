@@ -10,6 +10,7 @@ import UIKit
 
 final class MenuCollectionViewCell: UICollectionViewCell {
     static let identifier: String = "MenuCollectionViewCell"
+
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.font = .boldSystemFont(ofSize: 20.0)
@@ -22,6 +23,19 @@ final class MenuCollectionViewCell: UICollectionViewCell {
     func setupCell(menu: String) {
         titleLabel.text = menu
         setupViews()
+    }
+
+    override var isSelected: Bool {
+        get {
+            super.isSelected
+        }
+        set {
+            if newValue {
+                titleLabel.textColor = .blue
+            } else {
+                titleLabel.textColor = .label
+            }
+        }
     }
 }
 
