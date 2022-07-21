@@ -21,6 +21,7 @@
 		ADE019542888E50A008F55B4 /* DependencyInversionPrinciple.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE019532888E50A008F55B4 /* DependencyInversionPrinciple.swift */; };
 		ADE019562888FFCB008F55B4 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE019552888FFCB008F55B4 /* PageViewController.swift */; };
 		ADE0195928890CCE008F55B4 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE0195828890CCE008F55B4 /* MenuCollectionViewCell.swift */; };
+		ADE0195B28892429008F55B4 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE0195A28892429008F55B4 /* PageContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		ADE019532888E50A008F55B4 /* DependencyInversionPrinciple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInversionPrinciple.swift; sourceTree = "<group>"; };
 		ADE019552888FFCB008F55B4 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		ADE0195828890CCE008F55B4 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		ADE0195A28892429008F55B4 /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			children = (
 				ADE019552888FFCB008F55B4 /* PageViewController.swift */,
 				ADE0195828890CCE008F55B4 /* MenuCollectionViewCell.swift */,
+				ADE0195A28892429008F55B4 /* PageContentView.swift */,
 			);
 			path = PageView;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				ADE0194B2888C25B008F55B4 /* CustomButton.swift in Sources */,
 				ADB8708F2887B4B700E5189E /* AppDelegate.swift in Sources */,
 				ADE019522888CD2D008F55B4 /* InterfaceSegregationPrinciple.swift in Sources */,
+				ADE0195B28892429008F55B4 /* PageContentView.swift in Sources */,
 				ADE0195928890CCE008F55B4 /* MenuCollectionViewCell.swift in Sources */,
 				ADB870912887B4B700E5189E /* SceneDelegate.swift in Sources */,
 				ADB870C62887BA3000E5189E /* SingleResponsibilityPrinciple.swift in Sources */,

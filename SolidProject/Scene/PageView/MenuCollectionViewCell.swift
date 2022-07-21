@@ -41,6 +41,9 @@ final class MenuCollectionViewCell: UICollectionViewCell {
 
 private extension MenuCollectionViewCell {
     func setupViews() {
+        layer.borderColor = UIColor.lightGray.cgColor
+        layer.borderWidth = 0.3
+        
         [
             titleLabel
         ]

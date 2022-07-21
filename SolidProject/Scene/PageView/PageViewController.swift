@@ -13,9 +13,9 @@ final class PageViewController: UIViewController {
     private lazy var menuCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.minimumLineSpacing = 5
+        layout.minimumLineSpacing = 0
         layout.itemSize = CGSize(
-            width: UIScreen.main.bounds.width / 2 - 5,
+            width: UIScreen.main.bounds.width / 2,
             height: 50.0
         )
         let collectionView = UICollectionView(
